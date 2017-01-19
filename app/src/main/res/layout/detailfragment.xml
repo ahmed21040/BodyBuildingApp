@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#8289db"
+        android:id="@+id/w"
+        android:layout_marginBottom="8dp"
+        android:paddingRight="5dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sof"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/soundplay"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BARBELL BENCH PRESS - MEDIUM GRIP"
+            android:id="@+id/dname"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/soundplay"
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/w"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/lin"
+                android:background="#f5eeee"
+                android:layout_marginBottom="5dp"
+                >
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="230dp"
+                        android:src="@drawable/squat1"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/dimg1"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="230dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/squat1"
+
+                        android:id="@+id/dimg2"
+                        />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#8289db"
+                android:paddingLeft="10dp"
+                android:layout_below="@id/lin"
+                android:id="@+id/rr"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ffffff"
+                    />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rr"
+                android:id="@+id/det"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type : Strenght"
+                        android:id="@+id/type"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#2d2c2c" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type : Strenght"
+                        android:id="@+id/muscle"
+                        android:layout_below="@id/type"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#2d2c2c"
+                        />
+
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type : Strenght"
+                        android:id="@+id/equipment"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#2d2c2c"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type : Strenght"
+                        android:id="@+id/level"
+                        android:layout_below="@id/equipment"
+                        android:textSize="18dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#2d2c2c"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/det"
+                android:id="@+id/gg"
+                android:background="#f5eeee"
+                android:layout_marginBottom="20dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#8289db"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/r"
+                    android:layout_marginBottom="8dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guide"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_centerVertical="true"
+                        android:textColor="#ffffff"
+                        />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_below="@id/r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="1- Begin with the barbell supported on top of the traps. The chest should be up and the head facing forward. Adopt a hip-width stance with the feet turned out as needed. \n
+2- Descend by flexing the knees, refraining from moving the hips back as much as possible. This requires that the knees travel forward. Ensure that they stay align with the feet. The goal is to keep the torso as upright as possible.\n
+3- Continue all the way down, keeping the weight on the front of the heel. At the moment the upper legs contact the lower legs reverse the motion, driving the weight upward.\n"
+                    android:id="@+id/guide"
+                    android:textSize="18dp"
+                    android:textColor="#696565" />
+
+            </RelativeLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gg"
+                android:id="@+id/watch"
+                ></FrameLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
